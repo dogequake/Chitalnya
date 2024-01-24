@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dun"
+    android:padding="60dp"
+    tools:context=".ui.activity.login.RegistrationActivity">
+
+    <LinearLayout
+        android:id="@+id/logoLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/logo_login" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/registrationLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoLinearLayout">
+
+        <EditText
+            android:id="@+id/loginEditText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_beaver"
+            android:hint="Введите логин"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:textColor="@color/dun"
+            android:textColorHint="@color/dun"
+            android:textSize="16dp"
+            app:fontFamily="@font/raleway_bold" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_beaver"
+            android:hint="Введите пароль"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:textColor="@color/dun"
+            android:textColorHint="@color/dun"
+            android:textSize="16dp"
+            app:fontFamily="@font/raleway_bold" />
+
+        <EditText
+            android:id="@+id/doublePasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_beaver"
+            android:hint="Повторите пароль"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:textColor="@color/dun"
+            android:textColorHint="@color/dun"
+            android:textSize="16dp"
+            app:fontFamily="@font/raleway_bold" />
+
+        <EditText
+            android:id="@+id/surnameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_beaver"
+            android:hint="Введите фамилию"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:textColor="@color/dun"
+            android:textColorHint="@color/dun"
+            android:textSize="16dp"
+            app:fontFamily="@font/raleway_bold" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_beaver"
+            android:hint="Введите имя"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:textColor="@color/dun"
+            android:textColorHint="@color/dun"
+            android:textSize="16dp"
+            app:fontFamily="@font/raleway_bold" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/registrationLinearLayout">
+
+        <Button
+            android:id="@+id/registrationBtn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/flame"
+            android:text="Войти"
+            android:textColor="@color/dun"
+            app:cornerRadius="5dp"
+            app:fontFamily="@font/raleway_bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/taupe_gray"
+            android:text="Отмена"
+            android:textColor="@color/dun"
+            app:cornerRadius="5dp"
+            app:fontFamily="@font/raleway_bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/lora</item>
+        <item>@font/lora_bold</item>
+        <item>@font/playfair_display</item>
+        <item>@font/raleway</item>
+        <item>@font/raleway_bold</item>
+        <item>@font/source_sans_pro</item>
+        <item>@font/source_sans_pro_bold</item>
+        <item>@font/source_sans_pro_extralight</item>
+    </array>
+</resources>
